@@ -1,0 +1,159 @@
+<div class="container">
+
+    <!-- Amounts -->
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="amount-summary p-4">
+                <p class="min-title">New Applications</p>
+    
+                <div class="amount mt-5">
+                    <p>Total Amount</p>
+                    <h2>{{ '78917029' | currency:'NGN':'symbol-narrow':'4.2-2' }}</h2>
+                </div>
+    
+                <div class="total mt-5">
+                    <p>Total Number of Applications</p>
+                    <h2>852</h2>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="amount-summary p-4">
+                <p class="min-title">Processing</p>
+    
+                <div class="amount mt-5">
+                    <p>Total Amount</p>
+                    <h2>{{ '1910000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</h2>
+                </div>
+    
+                <div class="total mt-5">
+                    <p>Total Number of Applications</p>
+                    <h2>852</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="amount-summary p-4">
+                <p class="min-title">Awaiting Disbursement</p>
+    
+                <div class="amount mt-5">
+                    <p>Total Amount</p>
+                    <h2>{{ '470000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</h2>
+                </div>
+    
+                <div class="total mt-5">
+                    <p>Total Number of Applications</p>
+                    <h2>852</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="amount-summary p-4">
+                <p class="min-title">Ready For Disbursement</p>
+    
+                <div class="amount mt-5">
+                    <p>Total Amount</p>
+                    <h2>{{ '30000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</h2>
+                </div>
+    
+                <div class="total mt-5">
+                    <p>Total Number of Applications</p>
+                    <h2>852</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart and Report -->
+
+    <div class="row mt-5">
+
+        <div class="col-lg-6">
+            <div class="progress-circle-container p-4">
+                <p class="min-title mb-4">Target Position For April 2021</p>
+                <!-- <canvas baseChart
+                    [labels]="doughnutChartLabels"
+                    [datasets]="doughnutChartDatasets"
+                    [options]="doughnutChartOptions"
+                    [type]="'doughnut'">
+                </canvas> -->
+
+                <div class="progress-container">
+                    <circle-progress
+                        [percent]="64"
+                        [radius]="100"
+                        [showSubtitle]="false"
+                        [titleFontSize]="'45'"
+                        [titleColor]="'#FFFFFF'"
+                        [unitsColor]="'#FFFFFF'"
+                        [unitsFontSize]="'45'"
+                        [space]="35"
+                        [backgroundPadding]="10"
+                        [backgroundStrokeWidth]="8"
+                        [innerStrokeWidth]="100"
+                        [outerStrokeWidth]="10"
+                        [innerStrokeColor]="'#F56B2A'"
+                        [outerStrokeColor]="'#F56B2A'"
+                        [animation]="true"
+                        [animationDuration]="500"
+                    ></circle-progress>                     
+                </div>
+
+                <div class="progress-summary-amounts">
+                    <p><span class="target"></span> <strong>Target Amount </strong> - <span>{{ '500000000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</span></p>
+                    <p><span class="disbursed"></span> <strong>Loan Disbursed </strong> - <span>{{ '105000000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</span></p>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+            <div class="report-container p-4">
+                <p class="min-title">Disbursement Report (Past 4 Days)</p>
+
+                <div class="d-flex align-items-center justify-content-between header p-3 mt-4">
+                    <p>Day</p>
+                    <p>Number of loans</p>
+                    <p>Amount</p>
+                    <p>Index</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between p-3">
+                    <p>April 9, 2021</p>
+                    <p>0 Applicants</p>
+                    <p>{{ '0' | currency:'NGN':'symbol-narrow':'4.2-2' }}</p>
+                    <p class="index-down">-100%</p>
+                </div>
+                <div class="d-flex justify-content-between p-3">
+                    <p>April 8, 2021</p>
+                    <p>119 Applicants</p>
+                    <p>{{ '19634000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</p>
+                    <p class="index-down">-24.86%</p>
+                </div>
+                <div class="d-flex justify-content-between p-3">
+                    <p>April 7, 2021</p>
+                    <p>152 Applicants</p>
+                    <p>{{ '26130000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</p>
+                    <p class="index-up">54.28%</p>
+                </div>
+                <div class="d-flex justify-content-between p-3">
+                    <p>April 7, 2021</p>
+                    <p>152 Applicants</p>
+                    <p>{{ '26130000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</p>
+                    <p class="index-up">54.28%</p>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>

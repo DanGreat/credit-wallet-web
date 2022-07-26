@@ -1,0 +1,34 @@
+.disbursement-details, .account-details {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+.accordion-item {
+    // border: none !important;
+    border-color: #FEE9DF;
+    font-size: 14px;
+
+    .accordion-button {
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        box-shadow: 0 2px 1px #FEE9DF;
+    }
+}
+
+.accordion-item-no-border {
+    border: none !important;
+
+    .accordion-button {
+        box-shadow: none;
+    }
+}
+
+.header {
+    background-color: #FEE9DF;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+

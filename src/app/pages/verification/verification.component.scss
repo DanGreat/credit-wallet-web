@@ -1,0 +1,58 @@
+.user-container {
+    background: rgba(111, 207, 151, 1);
+
+    h3 {
+        margin: 0;
+        font-size: 24px;
+    }
+}
+
+.btn-groups {
+    button {
+       border: 1px solid;
+       
+    }
+}
+
+.accordion-item {
+    border: none !important;
+    font-size: 14px;
+
+    .accordion-button {
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        box-shadow: none;
+    }
+}
+
+.nav {
+    .nav-item {
+
+        .nav-link {
+            color: #000;
+
+            &.active {
+                color: #F56B2A;
+                border-bottom: 2px solid;
+                width: fit-content;
+            }
+        }
+
+    }
+}
+
+.request-details {
+    background: #d9ffe994;
+    border-radius: 10px;
+}
+
+table {
+    thead {
+        tr {
+            background-color: #FEE9DF;
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+    }
+}
