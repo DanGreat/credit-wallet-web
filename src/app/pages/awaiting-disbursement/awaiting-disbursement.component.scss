@@ -1,0 +1,43 @@
+.nav {
+    .nav-item {
+
+        .nav-link {
+            color: #000;
+
+            &.active {
+                color: #F56B2A;
+                border-bottom: 2px solid;
+                width: fit-content;
+            }
+        }
+
+    }
+}
+
+
+.table {
+    thead {
+        background-color: #FEE9DF;
+    }
+}
+
+.btn-orange {
+    background-color: #F56B2A;
+}
+
+.pagination {
+
+    .page-item {
+
+        .page-link {
+            color: #000;
+            background-color: #F2F2F2;;
+        }
+    }
+}
+
+.small-input {
+    width: 10%;
+    text-align: center;
+    color: #F56B2A;
+}

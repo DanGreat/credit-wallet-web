@@ -1,0 +1,133 @@
+<div class="container mx-4">
+
+    <h2>Not Yet Contacted</h2>
+
+    <div class="table-responsive pt-5">
+
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="text" class="form-control mx-2" id="exampleFormControlInput1">
+            </div>
+
+            <select class="form-select w-25" aria-label="Default select example">
+                <option selected>Select an Agent</option>
+                <option value="1">One</option>
+            </select>
+        </div>
+
+        <table class="table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Options</th>
+                <th scope="col">Loan ID</th>
+                <th scope="col">Category Status</th>
+                <th scope="col">Amount Due</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="watchlist-1 text-white">Watchlist 1</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="watchlist-2 text-white">Watchlist 2</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="watchlist-3 text-white">Watchlist 3</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="sub-standard text-white">Sunb Standard</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="doubtful text-white">Doubtful</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+
+              <tr>
+                <th scope="row">6</th>
+                <td>
+                    <button class="btn btn-orange text-white">View</button>
+                </td>
+                <td>CW1009263-01</td>
+                <td>
+                    <span class="loss text-white">Loss</span>
+                </td>
+                <td>{{ '100000' | currency:'NGN':'symbol-narrow':'4.2-2' }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <nav class="d-flex justify-content-between align-items-center">
+            <p class="d-flex align-items-center m-0">
+                Displaying
+                <input type="text" class="form-control small-input mx-1 m-0 p-0" value="6">
+                out of 1500 results
+            </p>
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+
+
+</div>

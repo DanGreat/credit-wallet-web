@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'loan',
     loadChildren: () => import('./pages/loan-disbursement/loan-disbursement.module').then(m => m.LoanDisbursementModule)
   },
+  {
+    path: 'user-management',
+    loadChildren: () => import('./pages/user-management/user-management.module').then(m => m.UserManagementModule)
+  },
+  {
+    path: 'incomplete-actions',
+    loadChildren: () => import('./pages/incomplete-actions/incomplete-actions.module').then(m => m.IncompleteActionsModule)
+  },
+  {
+    path: 'awaiting-disbursement',
+    loadChildren: () => import('./pages/awaiting-disbursement/awaiting-disbursement.module').then(m => m.AwaitingDisbursementModule)
+  },
 ];
 
 @NgModule({

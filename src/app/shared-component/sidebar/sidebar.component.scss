@@ -33,14 +33,14 @@
 
     .nav-item.active {
         color: #FEE9DF;
-        background-color: #000;
+        background-color:#333333;
         .nav-link {
             color: #FEE9DF !important;
         }
 
         &:hover {
             color: #FEE9DF;
-            background-color: #000;
+            background-color:#333333;
         }
     }
 

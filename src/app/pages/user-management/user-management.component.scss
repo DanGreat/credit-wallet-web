@@ -1,0 +1,51 @@
+.table {
+    thead {
+        background-color: #FEE9DF;
+    }
+}
+
+.watchlist-1, .watchlist-2, .watchlist-3, .sub-standard, .doubtful, .loss {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.watchlist-1 {
+    background-color: #219653;
+}
+
+.watchlist-2 {
+    background-color: #56CCF2;
+}
+
+.watchlist-3 {
+    background-color: #2F80ED;
+}
+
+.sub-standard {
+    background-color: #F2C94C;
+}
+
+.doubtful {
+    background-color: #F2994A;
+}
+
+.loss {
+    background-color: #EB5757;
+}
+
+.pagination {
+
+    .page-item {
+
+        .page-link {
+            color: #000;
+            background-color: #F2F2F2;;
+        }
+    }
+}
+
+.small-input {
+    width: 10%;
+    text-align: center;
+    color: #F56B2A;
+}

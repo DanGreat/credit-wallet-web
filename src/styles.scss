@@ -21,6 +21,10 @@ body{
     background-color: #FEE9DF;
 }
 
+tbody, td, tfoot, th, thead, tr {
+  border: 0 !important;
+}
+
 
 /* The switch - the box around the slider */
 .switch {
