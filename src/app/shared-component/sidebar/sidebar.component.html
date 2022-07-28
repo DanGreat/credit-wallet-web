@@ -96,3 +96,72 @@
       </ul>
     </div>
   </div>
+
+
+  <div class="second-menu" #secondMenu *ngIf="activeUrl('/recovery')">
+
+    <div class="brand-title">
+      <a href="javascript:void(0)" class="link-dark text-decoration-none" (click)="hideSecondMenu()">
+          <span class="fs-4">Recovery</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+          </svg>
+      </a>
+      
+    </div>
+
+    <div class="nav-container pb-4">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item px-3" [ngClass]="{'active': activeUrl('/recovery')}">
+          <a href="javascript:void(0)" routerLink="/recovery" class="nav-link" aria-current="page">
+            Overview
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" routerLink="/loan" class="nav-link link-dark">
+            Not Yet Contacted
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Not Reachable
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Dispute
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Performing
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Tentative
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Loss
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Partially Paid
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Fully Paid
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="javascript:void(0)" class="nav-link link-dark">
+            Recovery Report
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>

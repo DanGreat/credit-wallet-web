@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/loan-disbursement/loan-disbursement.module').then(m => m.LoanDisbursementModule)
   },
   {
+    path: 'recovery',
+    loadChildren: () => import('./pages/recovery/recovery.module').then(m => m.RecoveryModule)
+  },
+  {
     path: 'user-management',
     loadChildren: () => import('./pages/user-management/user-management.module').then(m => m.UserManagementModule)
   },

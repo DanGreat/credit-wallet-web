@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
+  @ViewChild('secondMenu', { static: false }) secondMenu!: ElementRef;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -16,4 +18,9 @@ export class SidebarComponent implements OnInit {
   activeUrl(url: string) {
     return this.router.url === url
   }
+
+  hideSecondMenu() {
+    this.secondMenu.nativeElement.classList.add('d-none')
+  }
+
 }
